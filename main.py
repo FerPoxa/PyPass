@@ -6,8 +6,6 @@ try:
     @click.command()
     @click.option('-l', '--length', prompt="Enter the length of your password")
     def generate(length):
-        if int(length) <0:
-            pass
         characters = string.ascii_letters + string.punctuation
         mylist = []
         for i in range(int(length)):
